@@ -83,15 +83,10 @@ footer {
     background-color: #d4d8f0;
     color: #232946;
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     position: fixed;
     bottom: 0;
     width: 100%;
     transition: bottom 0.3s;
 }
 
-body::after {
-    content: '';
-    height: 50px;
-    display: block;
-}
