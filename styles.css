@@ -107,12 +107,11 @@ h2 {
 
 .project images {
     display: flex; /* Make the project container a flex container */
-    align-items: center;
 
 }
 .project img {
     display: none;
-    max-width:20%; /* Adjust the maximum width as needed */
+  
     border-radius: 8px; /* Optional: Add rounded corners to the images */
 }
 
@@ -120,7 +119,7 @@ h2 {
     display: block;
     width: 200px; /* Adjust the width as needed */
         height:400px; /* Adjust the height as needed */
-       /*  object-fit: cover; Maintain the aspect ratio and cover the entire space */
+         /* object-fit: cover;Maintain the aspect ratio and cover the entire space */
     border-radius: 8px; 
     margin: 10px;
 }
@@ -128,7 +127,7 @@ h2 {
 
 .project img2 {
     display: none;
-    max-width:20%; /* Adjust the maximum width as needed */
+  
     border-radius: 8px; /* Optional: Add rounded corners to the images */
 }
 
