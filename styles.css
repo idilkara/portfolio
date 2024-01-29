@@ -52,7 +52,7 @@ h2 {
     display: block;
     margin-top: 10px;
     color: #232946; /* Button text color */
-    background-color: #eebbc3; /* Button background color */
+    background-color: #b8c1ec; /* Button background color */
     text-decoration: none;
     font-weight: bold;
     padding: 8px 15px;
@@ -62,7 +62,7 @@ h2 {
 
 .project a:hover {
     color: #232946; /* Button text color on hover */
-    background-color: #b8c1ec; /* Button background color on hover */
+    background-color: #eebbc3; /* Button background color on hover */
 }
 
 footer {
