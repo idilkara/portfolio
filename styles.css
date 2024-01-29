@@ -84,7 +84,6 @@ footer {
     color: #232946;
     text-align: center;
     padding: 8px;
-    position: fixed;
     bottom: 0;
     width: 100%;
     transition: bottom 0.3s;
