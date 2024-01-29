@@ -1,46 +1,65 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d4d8f0;
-    color: #232946;
+    background-color: #F5ECFC;
+    color: #0a130c;
 }
 
-header {
-    background-color: #d4d8f0;
-    color: #232946;
+header,footer {
+    background-color: #F5ECFC;
+    color: #0a130c;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #0a130c; /* Adjust the color as needed */
+    margin: 10px 0; /* Adjust the margin as needed */
 }
 
 .container {
     display: flex;
+
+    flex-wrap: wrap;
+    
 }
 
 .column {
-    flex: 1;
-    margin: 60px;
+    flex: 2;
+    margin: 40px;
 }
 
 .column2{
     flex: 1;
-    margin: 20px;
+    margin: 40px;
+
+    border-left: 2px solid #0a130c; /* Add a vertical line to the left of the second column */
+    padding-left: 40px; /* Optional: Add some padding to separate content from the line */
+    
 }
 
 .card {
-    border: 2px solid #232946;
+    border: 2px solid #0a130c;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
     background-color: #fffffe;
 }
 
+.date {
+    text-align: right; 
+}
+
 h2 {
-    color: #232946;
+    color: #0a130c;
 }
 
 .project {
-    border: 2px solid #232946;
+    
+    border: 2px solid #0a130c;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
@@ -51,6 +70,8 @@ h2 {
 
 .project:hover {
     transform: scale(1.05);
+    background-color: #ffffff;
+
 }
 
 .project h3 {
@@ -71,26 +92,51 @@ h2 {
     display: block;
     margin-top: 10px;
     color: #232946;
-    background-color: #eebbc3;
+    background-color: #C0E2E1;
     text-decoration: none;
-    font-weight: bold;
+
     padding: 8px 15px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .project a:hover {
-    color: #eebbc3;
-    background-color: #232946;
-}
-
-footer {
-    background-color: #d4d8f0;
     color: #232946;
-    text-align: center;
-    padding: 8px;
-    bottom: 0;
-    width: 100%;
-
+    background-color: #85C59B;
 }
 
+.project images {
+    display: flex; /* Make the project container a flex container */
+    align-items: center;
+
+}
+.project img {
+    display: none;
+    max-width:20%; /* Adjust the maximum width as needed */
+    border-radius: 8px; /* Optional: Add rounded corners to the images */
+}
+
+.project.active img {
+    display: block;
+    width: 200px; /* Adjust the width as needed */
+        height:400px; /* Adjust the height as needed */
+        object-fit: cover; /* Maintain the aspect ratio and cover the entire space */
+    border-radius: 8px; 
+    margin: 10px;
+}
+
+
+.project img2 {
+    display: none;
+    max-width:20%; /* Adjust the maximum width as needed */
+    border-radius: 8px; /* Optional: Add rounded corners to the images */
+}
+
+.project.active img2 {
+    display: block;
+    width: 250px; /* Adjust the width as needed */
+        height:400px; /* Adjust the height as needed */
+        object-fit: cover; /* Maintain the aspect ratio and cover the entire space */
+    border-radius: 8px; 
+    margin: 10px;
+}
