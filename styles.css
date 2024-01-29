@@ -19,7 +19,12 @@ header {
 
 .column {
     flex: 1;
-    margin: 40px;
+    margin: 80px;
+}
+
+.column2{
+    flex: 1;
+    margin: 20px;
 }
 
 .card {
