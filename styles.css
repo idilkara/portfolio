@@ -72,6 +72,14 @@ footer {
     text-align: center;
     padding: 10px;
     position: fixed;
-    bottom: 0;
+    bottom: -50px; /* Initially hide the footer above the viewport */
     width: 100%;
+    transition: bottom 0.3s;
+}
+
+/* Show the footer when the user scrolls to the bottom */
+body::after {
+    content: '';
+    height: 50px; /* Adjust this height to match the footer's height */
+    display: block;
 }
